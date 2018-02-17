@@ -1,10 +1,11 @@
 <?php
 $settings = array();
 $tmp = array(
-//    'test' => array(
-//        'xtype' => 'combo-boolean',
-//        'value' => true,
-//    ),
+    'exclude' => array(
+        'xtype' => 'textfield',
+        'value' => '',
+        'area' => PKG_NAME_LOWER . '.main',
+    ),
 );
 
 foreach ($tmp as $k => $v) {
@@ -12,7 +13,7 @@ foreach ($tmp as $k => $v) {
     $setting = $modx->newObject('modSystemSetting');
     $setting->fromArray(array_merge(
         array(
-            'key' => PKG_NAME_LOWER . '_' . $k,
+            'key' => PKG_NAME_LOWER . '.' . $k,
             'namespace' => PKG_NAME_LOWER,
         ), $v
     ), '', true, true);

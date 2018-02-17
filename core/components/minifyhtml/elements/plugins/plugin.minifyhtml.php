@@ -7,8 +7,9 @@
  */
 if ($modx->event->name == 'OnWebPagePrerender') {
     $cid = $modx->resource->get('id');
+    $exclude = $modx->getOption('minifyhtml.exclude', null, '');
 
-    if (empty($cid)) {
+    if (empty($cid) || in_array($cid, explode(',', $exclude))) {
         return;
     }
 

@@ -1,5 +1,10 @@
 Changelog for LastModified
 
+1.0.1-pl
+==============
+- Add system settings "exclude" for documents exclusion
+- Add lexicon files
+
 1.0.0-pl
 ==============
 - Initial release
