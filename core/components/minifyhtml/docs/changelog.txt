@@ -1,8 +1,15 @@
 Changelog for LastModified
 
+1.0.2-pl
+==============
+- Remove new lines system setting
+- Remove space characters doubles system setting
+- Bugfix with preg_replace and UTF-8
+- Some improvements
+
 1.0.1-pl
 ==============
-- Add system settings "exclude" for documents exclusion
+- Exclude documents system setting
 - Add lexicon files
 
 1.0.0-pl

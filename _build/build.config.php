@@ -3,7 +3,7 @@
 define('PKG_NAME', 'MinifyHTML');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
-define('PKG_VERSION', '1.0.1');
+define('PKG_VERSION', '1.0.2');
 define('PKG_RELEASE', 'pl');
 define('PKG_AUTO_INSTALL', false);
 
@@ -30,7 +30,7 @@ define('MODX_ASSETS_URL', MODX_BASE_URL . 'assets/');
 /* define build options */
 //define('BUILD_MENU_UPDATE', false);
 //define('BUILD_ACTION_UPDATE', false);
-define('BUILD_SETTING_UPDATE', false);
+define('BUILD_SETTING_UPDATE', true);
 define('BUILD_PLUGIN_UPDATE', true);
 
 //define('BUILD_CHUNK_STATIC', false);
